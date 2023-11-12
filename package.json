@@ -1,0 +1,27 @@
+{
+  "name": "serverless_module_2_shortlinker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lusiy321/serverless_module_2_SHORTLINKER.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lusiy321/serverless_module_2_SHORTLINKER/issues"
+  },
+  "homepage": "https://github.com/Lusiy321/serverless_module_2_SHORTLINKER#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "nanoid": "^5.0.3"
+  }
+}
