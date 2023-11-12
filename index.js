@@ -47,12 +47,21 @@ async function saveUrlStore() {
   }
 }
 
+function isValidUrl(url) {
+  try {
+    new URL(url);
+    return true;
+  } catch (error) {
+    return false;
+  }
+}
+
 app.use(express.json());
 
 app.post("/", (req, res) => {
   const originalUrl = req.body.url;
 
-  if (!originalUrl || typeof originalUrl !== "string") {
+  if (!originalUrl || isValidUrl(originalUrl) === false) {
     return res.status(400).json({ error: "Invalid URL format" });
   }
 
